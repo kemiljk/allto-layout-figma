@@ -1,0 +1,1006 @@
+<h5 style="margin-bottom: 0; margin-top: 0">Layout direction</h5>
+<div>
+  <button class="secondary mt-1 mr-1" id="vertical">Vertical</button>
+  <button class="secondary mt-1" id="horizontal">Horizontal</button>
+</div>
+<h5 style="margin-bottom: 0">Item spacing</h5>
+<div>
+  <input
+    name="itemSpacing"
+    type="number"
+    id="itemSpacing"
+    value=""
+    placeholder="Item spacing"
+    onchange="setValues()"
+  />
+  <button id="itemSpacingBtn" class="secondary icon">
+    <span
+      ><svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 3V6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6V3M7 12H17M21 21V18C21 17.4477 20.5523 17 20 17H4C3.44772 17 3 17.4477 3 18V21"
+          stroke="black"
+          stroke-width="1.5"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+<h5 style="margin-bottom: 0">Padding</h5>
+<div>
+  <input
+    type="number"
+    name="padding"
+    id="padding"
+    value=""
+    placeholder="All sides"
+    onchange="setPaddingValues()"
+  />
+  <button id="paddingBtn" class="secondary icon">
+    <span
+      ><svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3 2.5C2.72386 2.5 2.5 2.72386 2.5 3L2.5 21C2.5 21.2761 2.72386 21.5 3 21.5H21C21.2761 21.5 21.5 21.2761 21.5 21V3C21.5 2.72386 21.5 2.5 21.5 2.5H3ZM1.5 3C1.5 2.17157 2.17157 1.5 3 1.5H21C21.8284 1.5 22.5 2.17157 22.5 3V21C22.5 21.8284 21.8284 22.5 21 22.5H3C2.17157 22.5 1.5 21.8284 1.5 21L1.5 3Z"
+          fill="black"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.5 2.5H21.5V21.5H2.5V2.5ZM5.5 5.5L5.5 18.5H18.5V5.5H5.5Z"
+          fill="black"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+<div>
+  <input
+    type="number"
+    name="paddingTop"
+    id="paddingTop"
+    value=""
+    placeholder="Top"
+    onchange="setPaddingTopValues()"
+  />
+  <button id="paddingTopBtn" class="secondary icon">
+    <span
+      ><svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.5 3C2.5 2.72386 2.72386 2.5 3 2.5L21 2.5C21.2761 2.5 21.5 2.72386 21.5 3L21.5 21C21.5 21.2761 21.2761 21.5 21 21.5L3 21.5C2.72386 21.5 2.5 21.2761 2.5 21L2.5 3ZM3 1.5C2.17157 1.5 1.5 2.17157 1.5 3L1.5 21C1.5 21.8284 2.17157 22.5 3 22.5L21 22.5C21.8284 22.5 22.5 21.8284 22.5 21L22.5 3C22.5 2.17157 21.8284 1.5 21 1.5L3 1.5Z"
+          fill="black"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4.5 3.5L4.5 19.5L19.5 19.5L19.5 3.5L4.5 3.5ZM5.5 4.5L18.5 4.5L18.5 18.5L5.5 18.5L5.5 4.5Z"
+          fill="black"
+        />
+        <path d="M2 2L2 4.5L22 4.5L22 2L2 2Z" fill="black" />
+      </svg>
+    </span>
+  </button>
+</div>
+<div>
+  <input
+    type="number"
+    name="paddingBottom"
+    id="paddingBottom"
+    value=""
+    placeholder="Bottom"
+    onchange="setPaddingBottomValues()"
+  />
+  <button id="paddingBottomBtn" class="secondary icon">
+    <span
+      ><svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.5 21C2.5 21.2761 2.72386 21.5 3 21.5L21 21.5C21.2761 21.5 21.5 21.2761 21.5 21L21.5 3C21.5 2.72386 21.2761 2.5 21 2.5L3 2.5C2.72386 2.5 2.5 2.72386 2.5 3L2.5 21ZM3 22.5C2.17157 22.5 1.5 21.8284 1.5 21L1.5 3C1.5 2.17157 2.17157 1.5 3 1.5L21 1.5C21.8284 1.5 22.5 2.17157 22.5 3L22.5 21C22.5 21.8284 21.8284 22.5 21 22.5L3 22.5Z"
+          fill="black"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4.5 20.5L4.5 4.5L19.5 4.5L19.5 20.5L4.5 20.5ZM5.5 19.5L18.5 19.5L18.5 5.5L5.5 5.5L5.5 19.5Z"
+          fill="black"
+        />
+        <path d="M2 22L2 19.5L22 19.5L22 22L2 22Z" fill="black" />
+      </svg>
+    </span>
+  </button>
+</div>
+<div>
+  <input
+    type="number"
+    name="paddingLeft"
+    id="paddingLeft"
+    value=""
+    placeholder="Left"
+    onchange="setPaddingLeftValues()"
+  />
+  <button id="paddingLeftBtn" class="secondary icon">
+    <span
+      ><svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3 2.5C2.72386 2.5 2.5 2.72386 2.5 3L2.5 21C2.5 21.2761 2.72386 21.5 3 21.5H21C21.2761 21.5 21.5 21.2761 21.5 21V3C21.5 2.72386 21.2761 2.5 21 2.5H3ZM1.5 3C1.5 2.17157 2.17157 1.5 3 1.5H21C21.8284 1.5 22.5 2.17157 22.5 3V21C22.5 21.8284 21.8284 22.5 21 22.5H3C2.17157 22.5 1.5 21.8284 1.5 21L1.5 3Z"
+          fill="black"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3.5 4.5H19.5V19.5H3.5L3.5 4.5ZM4.5 5.5L4.5 18.5H18.5V5.5H4.5Z"
+          fill="black"
+        />
+        <path d="M2 2H4.5V22H2V2Z" fill="black" />
+      </svg>
+    </span>
+  </button>
+</div>
+<div>
+  <input
+    type="number"
+    name="paddingRight"
+    id="paddingRight"
+    value=""
+    placeholder="Right"
+    onchange="setPaddingRightValues()"
+  />
+  <button id="paddingRightBtn" class="secondary icon">
+    <span
+      ><svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M21 2.5C21.2761 2.5 21.5 2.72386 21.5 3L21.5 21C21.5 21.2761 21.2761 21.5 21 21.5H3C2.72386 21.5 2.5 21.2761 2.5 21V3C2.5 2.72386 2.72386 2.5 3 2.5H21ZM22.5 3C22.5 2.17157 21.8284 1.5 21 1.5H3C2.17157 1.5 1.5 2.17157 1.5 3V21C1.5 21.8284 2.17157 22.5 3 22.5H21C21.8284 22.5 22.5 21.8284 22.5 21L22.5 3Z"
+          fill="black"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M20.5 4.5H4.5V19.5H20.5L20.5 4.5ZM19.5 5.5L19.5 18.5H5.5V5.5H19.5Z"
+          fill="black"
+        />
+        <path d="M22 2H19.5V22H22V2Z" fill="black" />
+      </svg>
+    </span>
+  </button>
+</div>
+<h5 style="margin-bottom: 0">Align items</h5>
+<div>
+  <select
+    name="alignmentSelect"
+    class="mt-1 mr-1"
+    id="alignmentSelect"
+    onchange="setAlign()"
+  >
+    <option value="MIN" selected>Start</option>
+    <option value="CENTER">Center</option>
+    <option value="MAX">End</option>
+    <option value="SPACE_BETWEEN">Space between</option>
+  </select>
+  <select
+    name="counterAlignmentSelect"
+    class="mt-1"
+    id="counterAlignmentSelect"
+    onchange="setCounterAlign()"
+  >
+    <option value="MIN" selected>Start</option>
+    <option value="CENTER">Center</option>
+    <option value="MAX">End</option>
+    <option value="BASELINE">Baseline</option>
+  </select>
+</div>
+
+<h5 style="margin-bottom: 0">Hug contents</h5>
+<div>
+  <select
+    name="resizeSelect"
+    class="mt-1 mr-1"
+    id="resizeSelect"
+    onchange="setResize()"
+  >
+    <option value="FIXED" selected>Fixed</option>
+    <option value="AUTO">Hug contents</option>
+  </select>
+  <select
+    name="counterResizeSelect"
+    class="mt-1"
+    id="counterResizeSelect"
+    onchange="setCounterResize()"
+  >
+    <option value="FIXED" selected>Fixed</option>
+    <option value="AUTO">Hug contents</option>
+  </select>
+</div>
+<h5 style="margin-bottom: 0">Frame contents</h5>
+<div class="pb-2">
+  <button class="secondary mt-1 mr-1" id="fixedSize">Fixed size</button>
+  <button class="secondary mt-1" id="fillContainer">Fill container</button>
+</div>
+<div class="justify-end mb-0">
+  <p>Close plugin on completion</p>
+  <label class="switch">
+    <input type="checkbox" id="checkbox" />
+    <span class="slider round"></span>
+  </label>
+</div>
+<div class="justify-end mt-0 pt-0">
+  <p>Update selection only</p>
+  <label class="switch">
+    <input type="checkbox" id="selectCheckbox" />
+    <span class="slider round"></span>
+  </label>
+</div>
+
+<script>
+  /* Variables */
+
+  const itemSpacingTextBox = document.getElementById("itemSpacing");
+  let itemSpacingValue = Number(itemSpacingTextBox.value ?? 10);
+
+  const paddingValueTextBox = document.getElementById("padding");
+  let paddingValue = Number(paddingValueTextBox.value ?? null);
+
+  const paddingTopValueTextBox = document.getElementById("paddingTop");
+  let paddingTopValue = Number(paddingTopValueTextBox.value ?? null);
+
+  const paddingBottomValueTextBox = document.getElementById("paddingBottom");
+  let paddingBottomValue = Number(paddingBottomValueTextBox.value ?? null);
+
+  const paddingLeftValueTextBox = document.getElementById("paddingLeft");
+  let paddingLeftValue = Number(paddingLeftValueTextBox.value ?? null);
+
+  const paddingRightValueTextBox = document.getElementById("paddingRight");
+  let paddingRightValue = Number(paddingRightValueTextBox.value ?? null);
+
+  const alignType = document.getElementById("alignmentSelect");
+  let alignmentValue = alignType.value ?? "MIN";
+  console.log(alignType.value);
+
+  const counterAlignType = document.getElementById("counterAlignmentSelect");
+  let counterAlignmentValue = counterAlignType.value ?? "MIN";
+  console.log(counterAlignType.value);
+
+  const resizeType = document.getElementById("resizeSelect");
+  let resizeValue = resizeType.value ?? "FIXED";
+  console.log(resizeType.value);
+
+  const counterResizeType = document.getElementById("counterResizeSelect");
+  let counterResizeValue = counterResizeType.value ?? "FIXED";
+  console.log(counterResizeType.value);
+
+  const fixedSize = "INHERIT";
+  const fillContainer = "STRETCH";
+
+  /* Functions */
+
+  // onmessage = (event) => {
+  //   if (event.data.pluginMessage.itemSpacing) {
+  //     document.getElementById("itemSpacing").value =
+  //       event.data.pluginMessage.itemSpacing.toFixed(0);
+  //   }
+  //   if (event.data.pluginMessage.padding) {
+  //     document.getElementById("padding").value =
+  //       event.data.pluginMessage.padding.toFixed(0);
+  //   }
+  //   if (event.data.pluginMessage.paddingTop) {
+  //     document.getElementById("paddingTop").value =
+  //       event.data.pluginMessage.paddingTop.toFixed(0);
+  //   }
+  //   if (event.data.pluginMessage.paddingBottom) {
+  //     document.getElementById("paddingBottom").value =
+  //       event.data.pluginMessage.paddingBottom.toFixed(0);
+  //   }
+  //   if (event.data.pluginMessage.paddingLeft) {
+  //     document.getElementById("paddingLeft").value =
+  //       event.data.pluginMessage.paddingLeft.toFixed(0);
+  //   }
+  //   if (event.data.pluginMessage.paddingRight) {
+  //     document.getElementById("paddingRight").value =
+  //       event.data.pluginMessage.paddingRight.toFixed(0);
+  //   }
+  // };
+
+  function setValues() {
+    itemSpacingValue = Number(itemSpacingTextBox.value ?? 10);
+    return;
+  }
+
+  function setPaddingValues() {
+    paddingValue = Number(paddingValueTextBox.value ?? null);
+    return;
+  }
+
+  function setPaddingTopValues() {
+    paddingTopValue = Number(paddingTopValueTextBox.value ?? null);
+    return;
+  }
+
+  function setPaddingBottomValues() {
+    paddingBottomValue = Number(paddingBottomValueTextBox.value ?? null);
+    return;
+  }
+
+  function setPaddingLeftValues() {
+    paddingLeftValue = Number(paddingLeftValueTextBox.value ?? null);
+    return;
+  }
+
+  function setPaddingRightValues() {
+    paddingRightValue = Number(paddingRightValueTextBox.value ?? null);
+    return;
+  }
+
+  function setAlign() {
+    alignmentValue = alignType.value ?? "MIN";
+  }
+
+  function setCounterAlign() {
+    counterAlignmentValue = counterAlignType.value ?? "MIN";
+  }
+
+  function setResize() {
+    resizeValue = resizeType.value ?? "FIXED";
+  }
+
+  function setCounterResize() {
+    counterResizeValue = counterResizeType.value ?? "FIXED";
+  }
+
+  const checkbox = document.getElementById("checkbox");
+  let checkboxOn = checkbox.hasAttribute("checked");
+  checkbox.onclick = () => {
+    checkbox.toggleAttribute("checked");
+    checkboxOn = checkbox.hasAttribute("checked");
+    console.log(checkboxOn);
+    return;
+  };
+
+  const selectCheckbox = document.getElementById("selectCheckbox");
+  let selectCheckboxOn = selectCheckbox.hasAttribute("checked");
+  selectCheckbox.onclick = () => {
+    selectCheckbox.toggleAttribute("checked");
+    selectCheckboxOn = selectCheckbox.hasAttribute("checked");
+    console.log(selectCheckboxOn);
+    return;
+  };
+
+  document.getElementById("vertical").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "vertical",
+          direction: "VERTICAL",
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document.getElementById("horizontal").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "horizontal",
+          direction: "HORIZONTAL",
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document.getElementById("itemSpacingBtn").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "item-spacing",
+          itemSpacingValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document
+    .querySelector('input[name="itemSpacing"]')
+    .addEventListener("keyup", function (e) {
+      if (e.key === "Enter") {
+        parent.postMessage(
+          {
+            pluginMessage: {
+              type: "item-spacing",
+              itemSpacingValue,
+              checkboxOn,
+              selectCheckboxOn,
+            },
+          },
+          "*"
+        );
+      }
+    });
+
+  document.getElementById("paddingBtn").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "padding",
+          paddingValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document
+    .querySelector('input[name="padding"]')
+    .addEventListener("keyup", function (e) {
+      if (e.key === "Enter") {
+        parent.postMessage(
+          {
+            pluginMessage: {
+              type: "padding",
+              paddingValue,
+              checkboxOn,
+              selectCheckboxOn,
+            },
+          },
+          "*"
+        );
+      }
+    });
+
+  document.getElementById("paddingTopBtn").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "padding-top",
+          paddingTopValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document
+    .querySelector('input[name="paddingTop"]')
+    .addEventListener("keyup", function (e) {
+      if (e.key === "Enter") {
+        parent.postMessage(
+          {
+            pluginMessage: {
+              type: "padding-top",
+              paddingTopValue,
+              checkboxOn,
+              selectCheckboxOn,
+            },
+          },
+          "*"
+        );
+      }
+    });
+
+  document.getElementById("paddingBottomBtn").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "padding-bottom",
+          paddingBottomValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document
+    .querySelector('input[name="paddingBottom"]')
+    .addEventListener("keyup", function (e) {
+      if (e.key === "Enter") {
+        parent.postMessage(
+          {
+            pluginMessage: {
+              type: "padding-bottom",
+              paddingBottomValue,
+              checkboxOn,
+              selectCheckboxOn,
+            },
+          },
+          "*"
+        );
+      }
+    });
+
+  document.getElementById("paddingLeftBtn").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "padding-left",
+          paddingLeftValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document
+    .querySelector('input[name="paddingLeft"]')
+    .addEventListener("keyup", function (e) {
+      if (e.key === "Enter") {
+        parent.postMessage(
+          {
+            pluginMessage: {
+              type: "padding-left",
+              paddingLeftValue,
+              checkboxOn,
+              selectCheckboxOn,
+            },
+          },
+          "*"
+        );
+      }
+    });
+
+  document.getElementById("paddingRightBtn").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "padding-right",
+          paddingRightValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document
+    .querySelector('input[name="paddingRight"]')
+    .addEventListener("keyup", function (e) {
+      if (e.key === "Enter") {
+        parent.postMessage(
+          {
+            pluginMessage: {
+              type: "padding-right",
+              paddingRightValue,
+              checkboxOn,
+              selectCheckboxOn,
+            },
+          },
+          "*"
+        );
+      }
+    });
+
+  document.getElementById("alignmentSelect").onchange = () => {
+    alignmentValue =
+      alignmentSelect.options[alignmentSelect.selectedIndex].value;
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "alignment",
+          alignmentValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document.getElementById("counterAlignmentSelect").onchange = () => {
+    counterAlignmentValue =
+      counterAlignmentSelect.options[counterAlignmentSelect.selectedIndex]
+        .value;
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "counterAlignment",
+          counterAlignmentValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document.getElementById("resizeSelect").onchange = () => {
+    resizeValue = resizeSelect.options[resizeSelect.selectedIndex].value;
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "resize",
+          resizeValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document.getElementById("counterResizeSelect").onchange = () => {
+    counterResizeValue =
+      counterResizeSelect.options[counterResizeSelect.selectedIndex].value;
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "counterResize",
+          counterResizeValue,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document.getElementById("fixedSize").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "fixedSize",
+          fixedSize,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+
+  document.getElementById("fillContainer").onclick = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "fillContainer",
+          fillContainer,
+          checkboxOn,
+          selectCheckboxOn,
+        },
+      },
+      "*"
+    );
+  };
+</script>
+
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+  }
+  /* Remove excess padding and border in Firefox 4+ */
+  button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  button {
+    display: grid;
+    place-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0.25rem;
+  }
+
+  div.vertical {
+    display: block;
+  }
+
+  p {
+    font-size: smaller;
+    color: darkslategray;
+  }
+
+  span.small {
+    font-size: smaller;
+    color: darkslategray;
+    margin-bottom: 0.25rem;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+    color: #575757;
+    font-weight: 500;
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #d4d6dd;
+    margin-right: 0.25rem;
+  }
+  input:active {
+    border: 2px solid #17a0fb;
+  }
+  input:focus {
+    border: 2px solid #17a0fb;
+  }
+  select {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+    color: #575757;
+    font-weight: 500;
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #d4d6dd;
+  }
+  select:first-of-type {
+    margin-right: 0.25rem;
+  }
+  select:active {
+    border: 2px solid #17a0fb;
+  }
+  select:focus {
+    border: 2px solid #17a0fb;
+  }
+  .primary {
+    margin-right: 0.25rem;
+    background-color: #17a0fb;
+    color: white;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    transition: all 0.1s ease-in-out;
+  }
+  .secondary {
+    /* margin-right: 0.25rem; */
+    background-color: rgb(238, 237, 237);
+    color: rgb(87, 87, 87);
+    height: 40px;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: none;
+    outline: none;
+    transition: all 0.1s ease-in-out;
+  }
+  .textStyle {
+    background: none;
+    color: #17a0fb;
+    width: 40px;
+    font-weight: 600;
+    font-size: small;
+  }
+  .primary:last-of-type {
+    margin-right: 0;
+  }
+  .primary:active {
+    background-color: #0985d8;
+  }
+  .primary:focus {
+    background-color: #0985d8;
+  }
+  .primary:hover {
+    background-color: #0985d8;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+  .secondary:active {
+    background-color: #0985d8;
+    color: white;
+  }
+  .secondary:hover {
+    background-color: lightgray;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+  .secondary:focus {
+    background-color: #0985d8;
+    color: white;
+  }
+  .textStyle:active {
+    color: #0985d8;
+  }
+  .textStyle:hover {
+    color: #0985d8;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+  .textStyle:focus {
+    color: #0985d8;
+    border-bottom: 1px solid #0985d8;
+  }
+  .xs {
+    font-size: x-small;
+    margin-top: 5px;
+    color: darkslategray;
+  }
+  .sm {
+    font-size: small;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    color: darkslategray;
+  }
+  .h-6 {
+    height: 1rem;
+  }
+  .w-6 {
+    height: 1rem;
+  }
+  .icon {
+    width: 100px;
+  }
+  .justify-end {
+    justify-content: space-between;
+  }
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .mt-0 {
+    margin-top: 0;
+  }
+  .pt-0 {
+    padding-top: 0;
+  }
+  .pb-0 {
+    padding-bottom: 0;
+  }
+  .pb-2 {
+    padding-bottom: 0.5rem;
+  }
+  .mr-1 {
+    margin-right: 0.25rem;
+  }
+  .ml-1 {
+    margin-left: 0.25rem;
+  }
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d4d6dd;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #17a0fb;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 0 2px #17a0fb;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style>
